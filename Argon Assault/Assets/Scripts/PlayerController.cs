@@ -1,3 +1,4 @@
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -14,6 +15,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float positionRollFactor = 10;
 
     [SerializeField] float positionYawFactor = 5f;
+
+    [SerializeField] GameObject[] lasers;
 
 
     float xThrow, yThrow;
@@ -63,11 +66,27 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Space))
         {
-            Debug.Log("Fire");
+            ActivateLasers();
         }
         else
         {
-            Debug.Log("Not Firing");
+            DeactiveLasers();
+        }
+    }
+
+    private void DeactiveLasers()
+    {
+        foreach (var laser in lasers)
+        {
+            laser.SetActive(false);
+        }
+    }
+
+    private void ActivateLasers()
+    {
+        foreach (var laser in lasers)
+        {
+            laser.SetActive(true);
         }
     }
 }
