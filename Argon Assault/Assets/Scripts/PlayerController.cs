@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         ProcessTranslation();
         ProcessRotation();
+        ProcessFiring();
 
     }
 
@@ -56,5 +57,17 @@ public class PlayerController : MonoBehaviour
         float YPosClamp = Mathf.Clamp(newYPos, -rangeY, rangeY);
 
         transform.localPosition = new Vector3(XPosClamp, YPosClamp, transform.localPosition.z);
+    }
+
+    void ProcessFiring()
+    {
+        if(Input.GetKey(KeyCode.Space))
+        {
+            Debug.Log("Fire");
+        }
+        else
+        {
+            Debug.Log("Not Firing");
+        }
     }
 }

@@ -550,6 +550,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserRight
       objectReference: {fileID: 0}
+    - target: {fileID: 8127198718792971846, guid: c5c592acf37ddbf4e857f02a3013f89a, type: 3}
+      propertyPath: rangeX
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127198718792971846, guid: c5c592acf37ddbf4e857f02a3013f89a, type: 3}
+      propertyPath: rangeY
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8863563698787318181, guid: c5c592acf37ddbf4e857f02a3013f89a, type: 3}
       propertyPath: m_Name
       value: LaserLeft
