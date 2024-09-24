@@ -66,27 +66,21 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Space))
         {
-            ActivateLasers();
+            SetLasersActive(true);
         }
         else
         {
-            DeactiveLasers();
+            SetLasersActive(false);
         }
     }
 
-    private void DeactiveLasers()
+    private void SetLasersActive(bool trueOrFalse)
     {
         foreach (var laser in lasers)
         {
-            laser.SetActive(false);
+            laser.GetComponent<ParticleSystem>().enableEmission = trueOrFalse;
         }
     }
 
-    private void ActivateLasers()
-    {
-        foreach (var laser in lasers)
-        {
-            laser.SetActive(true);
-        }
-    }
+    
 }
