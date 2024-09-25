@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] GameObject enemyVFX;
+    [SerializeField] GameObject enemyExplosionVFX, enemyHitVFX;
     [SerializeField] Transform parent;
     [SerializeField] int increaseScoreAmount = 10;
+    [SerializeField] int hitAmount = 5;
+    int takeHit = 0;
 
     ScoreBoard scoreBoard;
 
@@ -17,13 +19,30 @@ public class Enemy : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
-        ProcessHit();
-        KillEnemy();
+        takeHit++;
+        if(takeHit >= hitAmount)
+        {
+            ProcessHit();
+            KillEnemy();
+        }
+
+        else
+        {
+            ProcessHit();
+            HitEnemy();
+        }
+
+    }
+
+    private void HitEnemy()
+    {
+        GameObject vfx = Instantiate(enemyHitVFX, transform.position, Quaternion.identity);
+        vfx.transform.parent = parent;
     }
 
     private void KillEnemy()
     {
-        GameObject vfx = Instantiate(enemyVFX, transform.position, Quaternion.identity);
+        GameObject vfx = Instantiate(enemyExplosionVFX, transform.position, Quaternion.identity);
         vfx.transform.parent = parent;
         Destroy(this.gameObject);
     }

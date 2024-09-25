@@ -531,9 +531,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10a57d7b33223940a5e631ba786c1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyVFX: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+  enemyExplosionVFX: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+  enemyHitVFX: {fileID: 3000069881522038698, guid: 7bf9e9682a31999458f3c9b3b6dbaa6b, type: 3}
   parent: {fileID: 1131900320}
   increaseScoreAmount: 10
+  hitAmount: 5
 --- !u!1 &830684307
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,9 +715,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10a57d7b33223940a5e631ba786c1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyVFX: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+  enemyExplosionVFX: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+  enemyHitVFX: {fileID: 3000069881522038698, guid: 7bf9e9682a31999458f3c9b3b6dbaa6b, type: 3}
   parent: {fileID: 1131900320}
   increaseScoreAmount: 10
+  hitAmount: 5
 --- !u!136 &969199439
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -836,9 +840,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10a57d7b33223940a5e631ba786c1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyVFX: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+  enemyExplosionVFX: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+  enemyHitVFX: {fileID: 3000069881522038698, guid: 7bf9e9682a31999458f3c9b3b6dbaa6b, type: 3}
   parent: {fileID: 1131900320}
   increaseScoreAmount: 10
+  hitAmount: 5
 --- !u!136 &1095418828
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1058,9 +1064,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10a57d7b33223940a5e631ba786c1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyVFX: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+  enemyExplosionVFX: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+  enemyHitVFX: {fileID: 3000069881522038698, guid: 7bf9e9682a31999458f3c9b3b6dbaa6b, type: 3}
   parent: {fileID: 1131900320}
   increaseScoreAmount: 10
+  hitAmount: 5
 --- !u!136 &1409109886
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1385,9 +1393,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10a57d7b33223940a5e631ba786c1bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyVFX: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+  enemyExplosionVFX: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+  enemyHitVFX: {fileID: 3000069881522038698, guid: 7bf9e9682a31999458f3c9b3b6dbaa6b, type: 3}
   parent: {fileID: 1131900320}
   increaseScoreAmount: 10
+  hitAmount: 5
 --- !u!136 &1998953536
 CapsuleCollider:
   m_ObjectHideFlags: 0
