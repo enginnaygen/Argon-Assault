@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -14,7 +12,14 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        AddRigidbody();
         scoreBoard = FindAnyObjectByType<ScoreBoard>();
+    }
+
+    private void AddRigidbody()
+    {
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.useGravity = false;
     }
 
     private void OnParticleCollision(GameObject other)

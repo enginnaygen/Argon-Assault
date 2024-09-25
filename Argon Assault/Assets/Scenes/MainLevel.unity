@@ -281,6 +281,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &101468066
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 836402135374593169, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
+      propertyPath: m_Name
+      value: Enemy1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346153582400949852, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 133.74657
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346153582400949852, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 142.27962
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346153582400949852, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 199.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346153582400949852, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346153582400949852, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346153582400949852, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346153582400949852, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346153582400949852, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346153582400949852, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2346153582400949852, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2c57ff71c5baaa64ca24c3ac5fe194fb, type: 3}
 --- !u!1 &300198339 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6335292790774618018, guid: c5c592acf37ddbf4e857f02a3013f89a, type: 3}
@@ -535,7 +592,7 @@ MonoBehaviour:
   enemyHitVFX: {fileID: 3000069881522038698, guid: 7bf9e9682a31999458f3c9b3b6dbaa6b, type: 3}
   parent: {fileID: 1131900320}
   increaseScoreAmount: 10
-  hitAmount: 5
+  hitAmount: 20
 --- !u!1 &830684307
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +776,7 @@ MonoBehaviour:
   enemyHitVFX: {fileID: 3000069881522038698, guid: 7bf9e9682a31999458f3c9b3b6dbaa6b, type: 3}
   parent: {fileID: 1131900320}
   increaseScoreAmount: 10
-  hitAmount: 5
+  hitAmount: 20
 --- !u!136 &969199439
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -844,7 +901,7 @@ MonoBehaviour:
   enemyHitVFX: {fileID: 3000069881522038698, guid: 7bf9e9682a31999458f3c9b3b6dbaa6b, type: 3}
   parent: {fileID: 1131900320}
   increaseScoreAmount: 10
-  hitAmount: 5
+  hitAmount: 20
 --- !u!136 &1095418828
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1068,7 +1125,7 @@ MonoBehaviour:
   enemyHitVFX: {fileID: 3000069881522038698, guid: 7bf9e9682a31999458f3c9b3b6dbaa6b, type: 3}
   parent: {fileID: 1131900320}
   increaseScoreAmount: 10
-  hitAmount: 5
+  hitAmount: 20
 --- !u!136 &1409109886
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1397,7 +1454,7 @@ MonoBehaviour:
   enemyHitVFX: {fileID: 3000069881522038698, guid: 7bf9e9682a31999458f3c9b3b6dbaa6b, type: 3}
   parent: {fileID: 1131900320}
   increaseScoreAmount: 10
-  hitAmount: 5
+  hitAmount: 20
 --- !u!136 &1998953536
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1604,3 +1661,4 @@ SceneRoots:
   - {fileID: 1131900320}
   - {fileID: 1529019879}
   - {fileID: 1363076439}
+  - {fileID: 101468066}
