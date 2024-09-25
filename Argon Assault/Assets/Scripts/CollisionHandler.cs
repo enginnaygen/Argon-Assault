@@ -1,25 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionHandler : MonoBehaviour
 {
+    [SerializeField] PlayerController playerControlller;
+    [SerializeField] float delay = 1f;
+  
     private void OnTriggerEnter(Collider collision)
     {
-        if(collision.tag == "Bridge")
-        {
-            Debug.Log("We crash on bridgeee!!");
-        }
-        else if(collision.tag == "Enemy")
-        {
-            Debug.Log("We crash on enemyy!");
+        playerControlller.enabled = false;
+        Invoke("ReStartScene", delay);
+    }
 
-        }
-        else if (collision.tag == "World")
-        {
-            Debug.Log("We crash on environmentt!");
-
-        }
+    void ReStartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
   
