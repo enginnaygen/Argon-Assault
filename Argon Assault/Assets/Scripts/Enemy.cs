@@ -3,15 +3,17 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject enemyExplosionVFX, enemyHitVFX;
-    [SerializeField] Transform parent;
     [SerializeField] int increaseScoreAmount = 10;
     [SerializeField] int hitAmount = 5;
     int takeHit = 0;
 
     ScoreBoard scoreBoard;
+    GameObject parentGameobject;
+
 
     private void Start()
     {
+        parentGameobject = GameObject.FindWithTag("SpawnAtRuntime");
         AddRigidbody();
         scoreBoard = FindAnyObjectByType<ScoreBoard>();
     }
@@ -42,13 +44,14 @@ public class Enemy : MonoBehaviour
     private void HitEnemy()
     {
         GameObject vfx = Instantiate(enemyHitVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent;
+        vfx.transform.parent = parentGameobject.transform;
+        
     }
 
     private void KillEnemy()
     {
         GameObject vfx = Instantiate(enemyExplosionVFX, transform.position, Quaternion.identity);
-        vfx.transform.parent = parent;
+        vfx.transform.parent = parentGameobject.transform;
         Destroy(this.gameObject);
     }
 
