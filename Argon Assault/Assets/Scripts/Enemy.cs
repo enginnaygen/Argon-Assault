@@ -3,7 +3,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] GameObject enemyExplosionVFX, enemyHitVFX;
-    [SerializeField] int increaseScoreAmount = 10;
+    [SerializeField] int increaseScoreAmountHit = 10;
+    [SerializeField] int increaseScoreAmountKill = 50;
     [SerializeField] int hitAmount = 5;
     int takeHit = 0;
 
@@ -29,13 +30,13 @@ public class Enemy : MonoBehaviour
         takeHit++;
         if(takeHit >= hitAmount)
         {
-            ProcessHit();
+            ProcessHit(increaseScoreAmountHit);
             KillEnemy();
         }
 
         else
         {
-            ProcessHit();
+            ProcessHit(increaseScoreAmountKill);
             HitEnemy();
         }
 
@@ -55,8 +56,8 @@ public class Enemy : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    private void ProcessHit()
+    private void ProcessHit(int amount)
     {
-        scoreBoard.IncreaseScore(increaseScoreAmount);
+        scoreBoard.IncreaseScore(amount);
     }
 }
