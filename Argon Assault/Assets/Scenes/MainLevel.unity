@@ -1103,7 +1103,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dfb10787342eac546b2337aa0dc601db, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.091
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1561,6 +1561,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1124748330}
     m_Modifications:
+    - target: {fileID: 194445304606838909, guid: 328ce45b45f8c3b4e8fb89ee318a2c0d, type: 3}
+      propertyPath: enemyExplosionFX
+      value: 
+      objectReference: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+    - target: {fileID: 460071993240850071, guid: 328ce45b45f8c3b4e8fb89ee318a2c0d, type: 3}
+      propertyPath: enemyExplosionFX
+      value: 
+      objectReference: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
+    - target: {fileID: 809302889448628313, guid: 328ce45b45f8c3b4e8fb89ee318a2c0d, type: 3}
+      propertyPath: enemyExplosionFX
+      value: 
+      objectReference: {fileID: 6939842414990269710, guid: 44671c5bbbc9b864d990de1bb53ca86b, type: 3}
     - target: {fileID: 5290141001815384783, guid: 328ce45b45f8c3b4e8fb89ee318a2c0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
